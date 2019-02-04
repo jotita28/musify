@@ -2,10 +2,11 @@
 
 <h1>Playlists</h1>
 
-<table>
+<table class="table table-dark"> 
   <thead>
     <tr>
       <th>Name</th>
+      <th>Songs</th>
       <th>User Name</th>
       <th colspan="3"></th>
     </tr>
@@ -15,10 +16,11 @@
     <% @playlists.each do |playlist| %>
       <tr>
         <td><%= playlist.name %></td>
+        <td><%= playlist.songs.count %></td>
         <td><%= playlist.user.name %></td>
-        <td><%= link_to 'Show', playlist %></td>
-        <td><%= link_to 'Edit', edit_playlist_path(playlist) %></td>
-        <td><%= link_to 'Destroy', playlist, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Show', playlist, class: 'btn btn-success' %></td>
+        <td><%= link_to 'Edit', edit_playlist_path(playlist), class: 'btn btn-info' %></td>
+        <td><%= link_to 'Destroy', playlist, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-danger' %></td>
       </tr>
     <% end %>
   </tbody>
@@ -26,4 +28,4 @@
 
 <br>
 
-<%= link_to 'New Playlist', new_playlist_path %>
+<%= link_to 'New Playlist', new_playlist_path, class: 'btn btn-primary' %>

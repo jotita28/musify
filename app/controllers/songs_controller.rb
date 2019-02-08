@@ -8,7 +8,7 @@ class SongsController < ApplicationController
 
         @song.save
 
-        redirect_to playlists_path
+        redirect_to playlist_path(params[:playlist_id]), notice: 'La canción se ha creado con éxito!!!'
     end
 
     def destroy

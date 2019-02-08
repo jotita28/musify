@@ -3,3 +3,27 @@
 2019-02-03 19:57:42.701 -03 [1196] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
 2019-02-03 19:57:42.887 -03 [1197] LOG:  database system was shut down at 2019-02-01 17:32:37 -03
 2019-02-03 19:57:42.900 -03 [1196] LOG:  database system is ready to accept connections
+2019-02-04 02:11:35.635 -03 [1196] LOG:  background worker "logical replication launcher" (PID 1203) exited with exit code 1
+2019-02-04 02:11:35.635 -03 [1196] LOG:  received smart shutdown request
+2019-02-04 02:11:35.636 -03 [1198] LOG:  shutting down
+2019-02-04 02:11:35.646 -03 [1196] LOG:  database system is shut down
+2019-02-04 10:23:47.505 -03 [896] LOG:  listening on IPv6 address "::1", port 5432
+2019-02-04 10:23:47.506 -03 [896] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2019-02-04 10:23:47.506 -03 [896] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2019-02-04 10:23:47.685 -03 [897] LOG:  database system was shut down at 2019-02-04 02:11:35 -03
+2019-02-04 10:23:47.697 -03 [896] LOG:  database system is ready to accept connections
+2019-02-04 15:20:14.601 -03 [896] LOG:  background worker "logical replication launcher" (PID 903) exited with exit code 1
+2019-02-04 15:20:14.601 -03 [896] LOG:  received smart shutdown request
+2019-02-04 15:20:14.601 -03 [898] LOG:  shutting down
+2019-02-04 15:20:14.610 -03 [896] LOG:  database system is shut down
+2019-02-08 00:33:17.958 -03 [1098] LOG:  listening on IPv6 address "::1", port 5432
+2019-02-08 00:33:17.959 -03 [1098] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2019-02-08 00:33:17.960 -03 [1098] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2019-02-08 00:33:18.156 -03 [1099] LOG:  database system was shut down at 2019-02-07 17:06:04 -03
+2019-02-08 00:33:18.171 -03 [1098] LOG:  database system is ready to accept connections
+2019-02-08 00:35:58.837 -03 [1193] ERROR:  update or delete on table "playlists" violates foreign key constraint "fk_rails_90043ff4b0" on table "songs"
+2019-02-08 00:35:58.837 -03 [1193] DETAIL:  Key (id)=(1) is still referenced from table "songs".
+2019-02-08 00:35:58.837 -03 [1193] STATEMENT:  DELETE FROM "playlists" WHERE "playlists"."id" = $1
+2019-02-08 00:36:14.185 -03 [1193] ERROR:  update or delete on table "playlists" violates foreign key constraint "fk_rails_90043ff4b0" on table "songs"
+2019-02-08 00:36:14.185 -03 [1193] DETAIL:  Key (id)=(1) is still referenced from table "songs".
+2019-02-08 00:36:14.185 -03 [1193] STATEMENT:  DELETE FROM "playlists" WHERE "playlists"."id" = $1
